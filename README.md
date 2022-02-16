@@ -1,8 +1,8 @@
 #### AP Survey for GravityForms
 
 1. Install GravityForms + Install Survery add-on
-- nothing will change untill you add form fields (Survey fields)
-- plugin will change look & feel for Radio/Checkbox buttons
+- Survey is included in Elite License
+- https://www.gravityforms.com/add-ons/survey/
 
 2. Install this plugin to extend 
 - nothing will change untill you add form fields (Survey fields)
