@@ -1,0 +1,226 @@
+/**
+* AP Survery for GravityForms
+* Extra Style for GravityForms
+* @TODOAP Add this to plugin so its easy to disable/remove if needed
+*
+* .ap-survey-for-gf - for form wrapper (for JS and Style)
+* .ap-survey-conditional - for conditional button
+ */
+
+
+$color-white: #ffffff;
+$color-submit: rgb(55, 105, 97);
+$color-orange: #186fd2;
+$color-border: #54473e;
+$color-gray: #3E3E3E;
+$color-black: #000000;
+$color-gray-light: #7A7A7A;
+
+
+.gform_confirmation_wrapper.ap-survey-for-gf {
+  text-align: center;
+}
+
+.ap-survey-for-gf_wrapper {
+  font-family: Arial, Helvetica, sans-serif;
+  color: $color-gray;
+    /*--- Validations  ----------*/
+  &.gform_validation_error {
+    text-align: center;
+  }
+    /*--- Fields  ----------*/
+  .gform_heading {
+    text-align: center;
+  }
+  h2.gform_title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 37px;
+  }
+  .gform_description {
+    display: block;
+    color: $color-gray-light;
+    margin-bottom: 1.5em !important;
+  }
+  &.gravity-theme {
+    .ap-survey-for-gf {
+      text-align: center;
+      /* form body */
+      .gform_body {
+
+        fieldset {
+          margin-bottom: 0.5rem;
+          legend.gfield_label {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 1rem;
+            @media (max-width: 999px) {
+              margin-bottom: 0.5rem;
+            }
+          }
+          .gchoice {
+            position: relative;
+            margin-bottom: 1rem;
+            @media (max-width: 999px) {
+              margin-bottom: 0.5rem;
+            }
+          }
+        }
+        .gfield_radio .gchoice {
+          display: inline-block;
+        }
+        .gfield_checkbox input[type="checkbox"],
+        .gfield_radio input[type="radio"] {
+          opacity: 0;
+          position: absolute;
+          width: 0;
+        }
+        .gfield_checkbox label,
+        .gfield_radio label {
+          max-width: 100% !important;
+          display: inline-block;
+          background-color: #fff;
+          border: 2px solid $color-border;
+          border-radius: 3px;
+          box-shadow: none;
+          box-sizing: border-box;
+          color: $color-gray;
+          cursor: pointer;
+          display: inline-block;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 1;
+          padding: 12px 24px;
+          text-align: center;
+          text-decoration: none;
+          transition: all .3s;
+          width: auto;
+        }
+        .gfield_checkbox input[type="checkbox"]:checked + label,
+        .gfield_radio input[type="radio"]:checked + label {
+          background-color: $color-orange;
+          border-color: $color-orange;
+          color: $color-white;
+        }
+        .gfield_checkbox input[type="checkbox"]:focus + label,
+        .gfield_radio input[type="radio"]:focus + label {
+          border: 2px solid $color-orange;
+        }
+        .gfield_checkbox label:hover,
+        .gfield_radio label:hover {
+          background-color: $color-orange;
+          color: $color-white;
+        }
+
+        .ginput_container_select {
+          select.gfield_select {
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+
+      }
+      /* form footer */
+      .gform_footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        input[type=submit].gform_button {
+          background-color: $color-submit;
+          border: 2px solid $color-submit;
+          color: $color-white;
+          min-height: 44px;
+          margin-right: 1rem;
+          padding: 12px 24px;
+          line-height: 1;
+
+          @media (max-width: 1024px) {
+            min-height: 51px;
+            line-height: 1.6;
+          }
+        }
+         fieldset {
+           .gchoice {
+             position: relative;
+           }
+           .gfield_validation_message {
+             display: none;
+           }
+         }
+      }
+      /**
+      * GravityForms style
+      * conditiona
+      * className ap-survey-conditional
+       */
+      fieldset.ap-survey-conditional {
+        &.opened {
+          display: none;
+        }
+        fieldset {
+          margin-bottom: 1.5em;
+          legend.gfield_label {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.75;
+          }
+        }
+        .gfield_radio .gchoice {
+          position: relative;
+          display: inline-block;
+        }
+        .gfield_checkbox input[type="checkbox"],
+        .gfield_radio input[type="radio"] {
+          opacity: 0;
+          position: absolute;
+          width: 0;
+        }
+        .gfield_checkbox label,
+        .gfield_radio label {
+          max-width: 100% !important;
+          display: inline-block;
+          background-color: transparent;
+          border: 0;
+          border-radius: 0;
+          box-shadow: none;
+          box-sizing: border-box;
+          color: $color-gray;
+          cursor: pointer;
+          display: inline-block;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 1;
+          min-height: 44px;
+          padding: 12px 24px;
+          text-align: center;
+          text-decoration: none;
+          transition: all .3s;
+          width: auto;
+          @media (max-width: 1024px) {
+            min-height: 51px;
+            line-height: 1.6;
+          }
+        }
+        .gfield_checkbox input[type="checkbox"]:checked + label,
+        .gfield_radio input[type="radio"]:checked + label {
+          background-color: transparent;
+          border-color: transparent;
+          color: $color-black;
+        }
+        .gfield_checkbox input[type="checkbox"]:focus + label,
+        .gfield_radio input[type="radio"]:focus + label {
+          border: 0;
+        }
+        .gfield_checkbox label:hover,
+        .gfield_radio label:hover {
+          background-color: transparent;
+          color: $color-black;
+        }
+      }
+    }
+  }
+
+}
