@@ -1,10 +1,14 @@
 #### AP Survey for GravityForms
 
-1. Install GravityForms + Install this plugin
+1. Install GravityForms + Install Survery add-on
 - nothing will change untill you add form fields (Survey fields)
-- plugin will change look & feel for Radio buttons
+- plugin will change look & feel for Radio/Checkbox buttons
 
-![Survey Frontend](screenshot-1.png "Survey frontend")
+2. Install this plugin to extend 
+- nothing will change untill you add form fields (Survey fields)
+- plugin will change look & feel for Radio/Checkbox buttons
+
+![Survey Frontend](screenshot-2.gif "Survey frontend")
 
 3. Must add ready class names to Form:
 ```ap-survey-for-gf```
