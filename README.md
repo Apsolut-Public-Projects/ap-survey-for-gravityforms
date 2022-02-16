@@ -1,7 +1,5 @@
 #### AP Survey for GravityForms
 
-
-
 1. Install GravityForms + Install this plugin
 - nothing will change untill you add form fields (Survey fields)
 - plugin will change look & feel for Radio buttons
@@ -15,3 +13,9 @@
 ```ap-survey-conditional```
 - set fields conditional to this field (radio, checkbox)
 - this will move button after submit button
+
+
+
+### ToDo
+- add/export form for as demo (quick start)
+- include options for colors
